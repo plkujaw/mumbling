@@ -1,3 +1,7 @@
 def accum(s)
-  'C'
+  result = []
+  s.chars.each_with_index do |letter, index|
+  result << (letter * (index + 1)).capitalize
+  end
+  result.join('-')
 end
